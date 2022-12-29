@@ -8,13 +8,13 @@ import WeatherInput from '../WeatherInput/WeatherInput'
 import './app.scss';
 
 const App = () => {
-  const {zipcode} = useContext(WeatherContext);
+  const {zipcode, weatherData} = useContext(WeatherContext);
 
   return (
     <div className="App">
       <Header></Header>
       <WeatherInput name="weather" placeholder="zipcode" value={zipcode} />
-      <WeatherForecast />
+      {weatherData && <WeatherForecast />}
     </div>
   );
 }

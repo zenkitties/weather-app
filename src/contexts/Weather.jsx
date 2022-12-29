@@ -14,7 +14,7 @@ export const WeatherContext = createContext({
 
 export const WeatherProvider = ({children}) => {
     const [location, setLocation] = useState({});
-    const [weatherData, setWeatherData] = useState({});
+    const [weatherData, setWeatherData] = useState(null);
     const [zipcode, setZipcode] = useState('');
     const [digits, setDigits] = useState(false);
 
