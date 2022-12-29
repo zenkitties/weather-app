@@ -1,0 +1,26 @@
+@import '../../constants/constants';
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 65px;
+    background-color: rgba(28, 0, 45, 0.85);
+    box-shadow: -1px 10px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 15px 0px rgba(0,0,0,0.75);
+
+    h1 {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin: 0;
+        padding: 10px 10px;
+        font: 28px $font-family;
+        font-weight: 500;
+    }
+
+    .cloud-icon {
+        margin-right: 10px;
+    }
+}
