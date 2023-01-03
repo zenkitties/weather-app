@@ -1,4 +1,20 @@
 .App {
     width: 100vw;
     height: 100%;
+    scrollbar-arrow-color: lighten(rgba(28, 0, 45, 0.90), 10%);
+    
+    ::-webkit-scrollbar {
+        width: thin;
+        scroll-behavior: smooth;
+        background: transparent;
+        border: 1px solid rgba(28, 0, 45, 0.85);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(28, 0, 45, 0.25);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(28, 0, 45, 0.90);
+    }
 }
